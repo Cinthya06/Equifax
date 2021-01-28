@@ -1,0 +1,129 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-28T05:35:53.546Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5436856499,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Searching for a book in amazon",
+        "description": "",
+        "id": "searching-for-a-book;searching-for-a-book-in-amazon",
+        "after": [
+          {
+            "result": {
+              "duration": 694516199,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 725601,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on amazon Page",
+            "match": {
+              "location": "SearchStepdefs.user_is_on_amazon_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4579263601,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user search for book \"qa testing for beginners\" and clicks on first result",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qa testing for beginners\"",
+                  "offset": 21
+                }
+              ],
+              "location": "bookPagesStepdefs.user_search_for_book_and_clicks_on_first_result(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 78724700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user verifies price",
+            "match": {
+              "location": "bookPagesStepdefs.user_verifies_price()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 952116700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on add to cart",
+            "match": {
+              "location": "bookPagesStepdefs.user_clicks_on_add_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 116909500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "before clicks on proceed user verify price",
+            "match": {
+              "location": "bookPagesStepdefs.before_clicks_on_proceed_user_verify_price()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 588020899,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user proceeds to checkout",
+            "match": {
+              "location": "bookPagesStepdefs.user_proceeds_to_checkout()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@amazonSearch"
+          }
+        ]
+      }
+    ],
+    "name": "Searching for a book",
+    "description": "",
+    "id": "searching-for-a-book",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/AmazonSearch.feature",
+    "tags": []
+  }
+]
